@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet", href="../css/sign-in-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="warning">
+            <div class="warning-text">
+                <h3 id="warning-text">Incorrect Email or Password</h3>
+            </div>
+            <div class="warning-icon">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="login-page">
+            <h3 id="Sign-in">Sign in</h3>
+            <form method="post">
+                <div class="email-input">
+                    <label for="email-input">Email</label>
+                    <input type="email" id="email-input", name="email-input">
+                </div>
+                <div class="password-input">
+                    <label for="password-input">Password</label>
+                    <input type="password" id="password-input", name="password-input">
+                </div>  
+                <div class="sign-in-button">
+                    <button type="button" onclick="processFormSignIn()">SIGN IN</button>
+                </div>  
+                <div class="extra-links">
+                    <a href="../html/sign-up-page.html">Sign Up</a>
+                </div>            
+                <div class="extra-links">
+                    <a>Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>var exports = {};</script>
+    <script src="../js/dist/index.js"></script>
+</body>
+</html>

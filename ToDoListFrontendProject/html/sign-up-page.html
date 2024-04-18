@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet", href="../css/sign-up-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="warning">
+            <div class="warning-text">
+                <h3 id="warning-text">Error Message</h3>
+            </div>
+            <div class="warning-icon">
+                <i class="fas fa-times" id="close-warning"></i>
+            </div>
+        </div>
+        <div class="register-page">
+            <h3 id="Sign-up">Sign up</h3>
+            <form method="post">
+                <div class="username-input">
+                    <label for="username-input">Username*</label>
+                    <input type="text" id="username-input", name="username-input">
+                </div>
+                <div class="email-input">
+                    <label for="email-input">Email*</label>
+                    <input type="email" id="email-input", name="email-input">
+                </div>
+                <div class="password-input">
+                    <label for="password-input">Password*</label>
+                    <input type="password" id="password-input", name="password-input">
+                </div>  
+                <div class="password-input">
+                    <label for="confirm-password-input">Confirm Password*</label>
+                    <input type="password" id="confirm-password-input", name="confirm-password-input">
+                </div> 
+                <div class="sign-up-button">
+                    <button type="button" onclick="processFormSignUp()">SIGN UP</button>
+                </div>  
+                <div class="extra-links">
+                    <a href="../html/sign-in-page.html">Already have an account? Sign In</a>
+                </div>             
+            </form>
+        </div>
+    </div>
+
+    <script>var exports = {};</script>
+    <script src="../js/dist/index.js"></script>
+</body>
+</html>

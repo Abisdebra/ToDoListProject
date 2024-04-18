@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgb(211, 211, 211);
+  height: 95%;
+  width: 70%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+#user-tasks-icon {
+  margin-right: 10px;
+  color: rgb(0, 128, 128);
+}
+
+#user-tasks {
+  font-size: 20px;
+  font-family: "Roboto Slab", sans-serif;
+  color: rgb(0, 128, 128);
+}
+
+.input-task {
+  border: 0.24px solid white;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+#add-task {
+  position: absolute;
+  border: none;
+  font-size: 16px;
+  width: 50%;
+  background: none;
+}
+
+#add-task:focus {
+  outline: none;
+}
+
+.select-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#select-priority {
+  margin-left: 10px;
+  width: 75px;
+  height: 25px;
+}
+
+#select-priority:focus {
+  outline: none;
+}
+
+#add-button {
+  float: right;
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: rgb(0, 128, 128);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 128, 128);
+  font-family: "Playfair Display", sans-serif;
+  margin-left: 10px;
+}
+
+#line-break {
+  color: black;
+  margin-top: 20px;
+  border: 0.24px solid black;
+}
+
+.sections {
+  display: flex;
+}
+
+.section {
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.section:hover {
+  border-bottom: 2px solid rgb(0, 128, 128);
+}
+
+#all-section,
+#active-section,
+#completed-section {
+  font-size: 13px;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.task-table {
+  width: 120%;
+  table-layout: fixed;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#task-rows {
+  position: relative;
+}
+
+.task-row-name,
+.task-row-priority,
+.task-row-actions {
+  border-right-width: medium;
+  width: 50%;
+  padding: 15px;
+  border-bottom: 0.5px solid black;
+}
+
+.task-row-name {
+  width: 100%;
+}
+
+.fa-check {
+  color: rgb(34, 139, 34);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.fa-pen {
+  color: rgb(0, 0, 205);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  color: rgb(220, 20, 60);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+#priority {
+  color: rgb(34, 139, 34);
+}
+
+.task-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.task-row {
+  padding-left: 17px;
+}
+
+#task-header {
+  width: 46%;
+}

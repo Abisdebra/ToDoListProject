@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.register-page {
+  width: 30%;
+  height: 75%;
+  background-color: rgb(224, 255, 255);
+  padding: 20px;
+  box-sizing: border-box;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+#Sign-up {
+  font-family: "Playfair Display", sans-serif;
+  color: rgb(0, 128, 128);
+}
+
+.username-input,
+.email-input,
+.password-input {
+  padding-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+input {
+  width: 97%;
+  height: 25px;
+  border: 0.75px solid black;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 1.5px 1.5px 1.5px rgb(1, 59, 59);
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(2, 176, 176);
+  border: 1px solid rgb(2, 176, 176);
+  border-radius: 15px;
+}
+
+.extra-links {
+  display: block;
+  padding-top: 10px;
+}
+
+a {
+  color: rgb(0, 128, 128);
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+#warning {
+  display: none;
+  background-color: rgb(248, 155, 155);
+  text-align: left;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.warning-text {
+  width: 60%;
+  margin-right: 2%;
+  margin-left: 20px;
+  float: left;
+}
+
+.warning-icon {
+  width: 5%;
+  margin-top: 1.2%;
+  float: right;
+  cursor: pointer;
+}
+
+#warning-text {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+}

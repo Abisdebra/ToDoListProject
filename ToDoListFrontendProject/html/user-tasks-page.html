@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet", href="../css/user-tasks-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="head-section">
+                <div class="title">
+                    <i class="fas fa-tasks" id="user-tasks-icon"></i>
+                    <h3 id="user-tasks"><span id="username"></span>'s Tasks</h3>
+                </div>
+                <div class="input-task">
+                    <form>
+                        <input id="add-task" placeholder="Add new task...">
+                        <div class="select-button">
+                            <select id="select-priority">
+                                <option value="low">low</option>
+                                <option value="medium">medium</option>
+                                <option value="high">high</option>
+                            </select>
+                            <button type="button" id="add-button" onclick="addNewTask()">ADD</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr id="line-break">
+            <div class="sections">
+                <div class="section" id="all-section">
+                    <h3>ALL</h3>
+                </div>
+                <div class="section" id="active-section">
+                    <h3>ACTIVE</h3>
+                </div>
+                <div class="section" id="completed-section">
+                    <h3>COMPLETED</h3>
+                </div>
+            </div>
+            <table class="task-table">
+                <thead>
+                    <tr id="task-rows">
+                        <th class="task-row" id="task-header">Task</th>
+                        <th class="task-row">Priority</th>
+                        <th class="task-row">Actions</th>
+                    </tr>
+                </thead>
+            </table>
+            <hr id="line-break"> 
+            <table class="task-table">
+                <tbody id="table-body">
+                    <!-- Filled with JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/dist/index.js"></script>
+</body>
+</html>

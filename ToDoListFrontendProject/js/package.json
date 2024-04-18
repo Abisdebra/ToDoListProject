@@ -1,0 +1,13 @@
+{
+  "name": "to-do-list-frontend",
+  "version": "1.0.0",
+  "description": "This is the frontend package for the to do list website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo OK",
+    "build": "tsc"
+  },
+  "author": "Tijani Deborah",
+  "license": "ISC"
+}
